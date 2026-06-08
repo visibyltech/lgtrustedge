@@ -209,7 +209,6 @@ export default function Home() {
     const [featLoading, setFeatLoading] = useState(false);
     const [slides, setSlides] = useState(DEFAULT_SLIDES);
     const [currentSlide, setCurrentSlide] = useState(0);
-    const timer = useCountdown(5, 59, 59);
     const navigate = useNavigate();
 
     /* Auto-advance hero */
@@ -258,7 +257,7 @@ export default function Home() {
                 WHATSAPP FLOATING BUTTON
             ══════════════════════════════ */}
             <a
-                href="https://wa.me/2340000000000"
+                href="https://wa.me/2347080441764?text=Hi%20LG%20Trust%20Edge%2C%20I%20want%20to%20place%20an%20order."
                 target="_blank"
                 rel="noreferrer"
                 className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300"
@@ -361,54 +360,33 @@ export default function Home() {
             </section>
 
             {/* ══════════════════════════════
-                OVERLAPPING FLASH SALE CARD
+                OVERLAPPING FLASH SALE CARD (RED THEME)
             ══════════════════════════════ */}
             <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-20 mt-4 sm:-mt-20 mb-16">
-                <div className="bg-slate-900 rounded-[2rem] p-8 flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-700 relative overflow-hidden group">
-                    {/* Glowing background effect */}
-                    <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-[2rem] pointer-events-none">
-                        <div className="absolute -top-24 -left-24 w-64 h-64 bg-lg-red/20 rounded-full blur-[80px] group-hover:bg-lg-red/30 transition-all duration-700"></div>
-                        <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] group-hover:bg-blue-500/20 transition-all duration-700"></div>
+                <div className="bg-gradient-to-r from-lg-red to-red-800 rounded-[2.5rem] p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(226,0,26,0.3)] relative overflow-hidden">
+                    
+                    {/* Background abstract shapes */}
+                    <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
+                        <div className="absolute -top-10 -right-10 w-40 h-40 border-[20px] border-white rounded-full"></div>
+                        <div className="absolute bottom-10 left-20 w-64 h-64 border-[30px] border-white rounded-full opacity-50"></div>
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-20 bg-white rotate-45 opacity-20"></div>
                     </div>
                     
-                    <div className="relative z-10 flex items-center gap-6 w-full md:w-auto">
-                        <div className="w-16 h-16 bg-gradient-to-br from-lg-red to-red-900 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-[0_0_30px_rgba(226,0,26,0.4)]">
-                            <i className="fas fa-bolt text-white text-3xl animate-pulse"></i>
+                    <div className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left gap-2 w-full md:w-auto">
+                        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full mb-2 border border-white/30">
+                            <i className="fas fa-star text-white text-sm"></i>
+                            <span className="text-xs text-white font-black uppercase tracking-[0.2em]">Premium Selection</span>
                         </div>
-                        <div>
-                            <div className="flex items-center gap-2 mb-1">
-                                <span className="w-2 h-2 rounded-full bg-lg-red animate-ping"></span>
-                                <div className="text-[10px] text-lg-red font-black uppercase tracking-[0.3em]">Live Now</div>
-                            </div>
-                            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">Flash Deals</h2>
-                            <p className="text-slate-400 text-xs font-medium mt-1">Don't miss out on these exclusive prices</p>
-                        </div>
+                        <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight drop-shadow-md">Top Tier Electronics</h2>
+                        <p className="text-red-100 text-sm font-medium mt-1">Discover the latest in home appliances and smart devices.</p>
                     </div>
                     
-                    <div className="relative z-10 flex flex-col items-center md:items-end gap-3 w-full md:w-auto">
-                        <div className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em]">Offers Expire In</div>
-                        <div className="flex items-center gap-2 sm:gap-3">
-                            {[
-                                { val: timer.h, label: 'Hours' },
-                                { val: timer.m, label: 'Mins' },
-                                { val: timer.s, label: 'Secs' },
-                            ].map((t, i) => (
-                                <div key={t.label} className="flex flex-col items-center gap-1.5">
-                                    <div className="bg-slate-800/80 backdrop-blur-md text-white font-mono font-bold text-2xl sm:text-3xl w-14 sm:w-16 h-14 sm:h-16 flex items-center justify-center rounded-xl border border-slate-600/50 shadow-inner">
-                                        {pad(t.val)}
-                                    </div>
-                                    <span className="text-[8px] text-slate-400 font-black uppercase tracking-[0.2em]">{t.label}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    
-                    <div className="relative z-10 w-full md:w-auto">
+                    <div className="relative z-10 w-full md:w-auto mt-4 md:mt-0 flex justify-center">
                         <Link
                             to="/products"
-                            className="w-full md:w-auto flex justify-center items-center gap-3 bg-white text-slate-900 hover:bg-slate-100 font-black text-xs uppercase tracking-widest px-8 py-5 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:scale-105"
+                            className="group flex justify-center items-center gap-3 bg-slate-900 text-white hover:bg-black font-black text-sm uppercase tracking-widest px-8 py-5 rounded-2xl transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] hover:-translate-y-1"
                         >
-                            Shop Sale <i className="fas fa-arrow-right"></i>
+                            Shop Now <i className="fas fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
                         </Link>
                     </div>
                 </div>

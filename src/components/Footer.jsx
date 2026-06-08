@@ -11,20 +11,20 @@ export default function Footer() {
     const hubDetails = {
         lagos: {
             address: '14 Electronics Avenue, Alaba Int\'l Market Link Rd, Victoria Island, Lagos',
-            phone: '+234 800 123 4567',
-            whatsapp: 'https://wa.me/2348001234567?text=Hi%20LG%20Trust%20Edge%20Lagos%2C%20I%20want%20to%20place%20a%20bulk%20order.',
+            phone: '+234 708 044 1764',
+            whatsapp: 'https://wa.me/2347080441764?text=Hi%20LG%20Trust%20Edge%20Lagos%2C%20I%20want%20to%20place%20a%20bulk%20order.',
             hours: 'Mon–Sat: 8am – 7pm'
         },
         abuja: {
             address: 'Suite G12, Capital Plaza, Central Business District, Abuja, FCT',
-            phone: '+234 801 987 6543',
-            whatsapp: 'https://wa.me/2348019876543?text=Hi%20LG%20Trust%20Edge%20Abuja%2C%20I%20need%20wholesale%20appliances.',
+            phone: '+234 708 044 1764',
+            whatsapp: 'https://wa.me/2347080441764?text=Hi%20LG%20Trust%20Edge%20Abuja%2C%20I%20need%20wholesale%20appliances.',
             hours: 'Mon–Sat: 9am – 6pm'
         },
         ph: {
             address: 'Plot 45, Trans-Amadi Industrial Layout, Port Harcourt, Rivers State',
-            phone: '+234 802 444 5555',
-            whatsapp: 'https://wa.me/2348024445555?text=Hi%20LG%20Trust%20Edge%20PH%2C%20checking%20for%20stock%20availability.',
+            phone: '+234 708 044 1764',
+            whatsapp: 'https://wa.me/2347080441764?text=Hi%20LG%20Trust%20Edge%20PH%2C%20checking%20for%20stock%20availability.',
             hours: 'Mon–Fri: 8am – 6pm'
         }
     };

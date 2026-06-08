@@ -234,7 +234,7 @@ export default function Register() {
                     </div>
                     <input
                       type="tel" name="phone" value={formData.phone}
-                      placeholder="+234 800 000 0000" required onChange={handleChange}
+                      placeholder="+234 708 044 1764" required onChange={handleChange}
                       className="w-full pl-11 pr-4 py-3 bg-slate-50 border-2 border-slate-100 focus:border-lg-red/30 focus:bg-white outline-none text-sm font-bold text-slate-800 transition-all rounded-2xl placeholder-slate-300 focus:ring-4 focus:ring-lg-red/10"
                     />
                   </div>

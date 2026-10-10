@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://ember-ridge-co.vercel.app/$1"
+    }
+  ]
+}
